@@ -34,7 +34,7 @@ const observationSchema = new Schema({
     default:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/310px-Placeholder_view_vector.svg.png",
   },
-  sound: { type: String },
+  sound: String,
   temperature: { type: Number },
   birdId: { type: Schema.Types.ObjectId, ref: "Bird" },
 });

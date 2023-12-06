@@ -20,7 +20,7 @@ const birdSchema = new Schema({
   },
   image: { type: String },
   region: { type: [String] },
-  lengthMin: { type: Number },
+  lengthMin: Number,
   lengthMax: { type: Number },
   wingspanMin: { type: Number },
   wingspanMax: { type: Number },

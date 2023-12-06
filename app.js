@@ -22,6 +22,9 @@ app.use("/api", require("./routes/observation.routes"));
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+const birdRoutes = require("./routes/bird.routes")
+app.use("/birds", birdRoutes)
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 

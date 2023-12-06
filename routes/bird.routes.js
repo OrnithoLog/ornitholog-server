@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Bird = require("../models/Bird.model");
 
 //  POST /birds
-router.post("/", (req, res) => {
+router.post("/birds", (req, res) => {
     const {name, sciName, family, order, status, image, region, lengthMax, wingspanMin, wingspanMax} = req.body
     const newBird = {name, sciName, family, order, status, image, region, lengthMax, wingspanMin, wingspanMax}
     
@@ -19,7 +19,7 @@ router.post("/", (req, res) => {
 })
 
 // GET /birds
-router.get("/", (req, res,) => {
+router.get("/birds", (req, res,) => {
     Bird
         .find()
         .then(birdsArray => res.status(200).json(birdsArray) )

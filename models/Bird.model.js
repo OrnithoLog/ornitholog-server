@@ -1,10 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const birdSchema = new Schema({
-  name: { type: String, unique, required },
-  sciName: { type: String, unique, required },
-  family: { type: String, required },
-  order: { type: String, required },
+  name: { type: String, unique: true, required: true },
+  sciName: { type: String, unique: true, unique: true },
+  family: { type: String, required: true },
+  order: { type: String, required: true },
   status: {
     type: String,
     enum: [

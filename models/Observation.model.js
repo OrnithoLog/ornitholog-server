@@ -1,8 +1,8 @@
 const { Schema, model } = require("mongoose");
 
 const observationSchema = new Schema({
-  name: { type: String, required },
-  date: { type: Date, required },
+  name: { type: String, required: true },
+  date: { type: Date, required: true },
   location: {
     type: {
       type: String,
@@ -16,7 +16,7 @@ const observationSchema = new Schema({
   },
   habitat: {
     type: String,
-    required,
+    required: true,
     enum: [
       "forest",
       "grassland",

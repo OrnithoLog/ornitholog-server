@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const observationSchema = new Schema({
   name: { type: String, required: true },
-  date: { type: Date, required: true },
+  date: { type: Date, default: Date.now },
   location: {
     type: {
       type: String,

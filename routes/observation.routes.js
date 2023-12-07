@@ -5,6 +5,7 @@ const Observation = require("../models/Observation.model");
 
 router.get("/observations", (req, res, next) => {
   Observation.find()
+    .populate("birdId")
     .then((response) => {
       res.json(response);
     })

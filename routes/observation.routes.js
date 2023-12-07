@@ -15,6 +15,19 @@ router.get("/observations", (req, res, next) => {
     });
 });
 
+router.get("/observations/:id", (req, res, next) => {
+  const {id} = req.params
+  Observation.findById(id)
+    .populate("birdId")
+    .then((response) => {
+      res.json(response);
+    })
+    .catch((err) => {
+      console.log("Error getting observation${id}...", err);
+      res.status(500).json({ message: `Error getting observation ${id}...` });
+    });
+});
+
 router.post("/observations", (req, res, next) => {
   const {
     name,

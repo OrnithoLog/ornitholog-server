@@ -28,7 +28,7 @@ const observationSchema = new Schema({
     ],
   },
   vegetation: { type: String },
-  age: { enum: ["juvenil", "adult"] },
+  age: { type: String, enum: ["juvenil", "adult"] },
   photo: {
     type: String,
     default:

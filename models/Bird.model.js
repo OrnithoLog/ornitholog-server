@@ -24,6 +24,7 @@ const birdSchema = new Schema({
   lengthMax: { type: Number },
   wingspanMin: { type: Number },
   wingspanMax: { type: Number },
+  infoText: String,
 });
 const Bird = model("Bird", birdSchema);
 

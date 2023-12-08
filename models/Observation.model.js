@@ -1,6 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const observationSchema = new Schema({
+  creator: { type: Schema.Types.ObjectId, ref:"User" },
   birdId: { type: Schema.Types.ObjectId, ref: "Bird" },
   title: { type: String },
   date: { type: Date, default: Date.now },

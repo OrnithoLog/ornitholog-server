@@ -2,6 +2,7 @@ const router = require("express").Router();
 const mongoose = require("mongoose");
 
 const Observation = require("../models/Observation.model");
+const { isAuthenticated } = require("../middleware/jwt.middleware");
 
 router.get("/observations", (req, res, next) => {
   Observation.find()
@@ -16,7 +17,7 @@ router.get("/observations", (req, res, next) => {
 });
 
 router.get("/observations/:id", (req, res, next) => {
-  const {id} = req.params
+  const { id } = req.params
   Observation.findById(id)
     .populate("birdId")
     .then((response) => {
@@ -28,7 +29,8 @@ router.get("/observations/:id", (req, res, next) => {
     });
 });
 
-router.post("/observations", (req, res, next) => {
+router.post("/observations", isAuthenticated, (req, res, next) => {
+
   const {
     title,
     date,
@@ -44,6 +46,7 @@ router.post("/observations", (req, res, next) => {
   } = req.body;
 
   Observation.create({
+    creator: req.payload._id,
     title,
     date,
     location,

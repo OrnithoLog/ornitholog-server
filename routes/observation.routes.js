@@ -23,14 +23,14 @@ router.get("/observations/:id", (req, res, next) => {
       res.json(response);
     })
     .catch((err) => {
-      console.log("Error getting observation${id}...", err);
+      console.log("Error getting observation...", err);
       res.status(500).json({ message: `Error getting observation ${id}...` });
     });
 });
 
 router.post("/observations", (req, res, next) => {
   const {
-    name,
+    title,
     date,
     location,
     habitat,
@@ -40,10 +40,11 @@ router.post("/observations", (req, res, next) => {
     sound,
     temperature,
     birdId,
+    notes
   } = req.body;
 
   Observation.create({
-    name,
+    title,
     date,
     location,
     habitat,
@@ -53,6 +54,7 @@ router.post("/observations", (req, res, next) => {
     sound,
     temperature,
     birdId,
+    notes
   })
     .then((response) => res.status(201).json(response))
     .catch((err) => {
@@ -64,7 +66,7 @@ router.post("/observations", (req, res, next) => {
 router.put("/observations/:observationId", (req, res, next) => {
   const { observationId } = req.params;
   const {
-    name,
+    title,
     date,
     location,
     habitat,
@@ -74,12 +76,13 @@ router.put("/observations/:observationId", (req, res, next) => {
     sound,
     temperature,
     birdId,
+    notes
   } = req.body;
 
   Observation.findByIdAndUpdate(
     observationId,
     {
-      name,
+      title,
       date,
       location,
       habitat,
@@ -89,6 +92,7 @@ router.put("/observations/:observationId", (req, res, next) => {
       sound,
       temperature,
       birdId,
+      notes
     },
     { new: true }
   )

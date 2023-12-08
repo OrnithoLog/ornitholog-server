@@ -2,6 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const observationSchema = new Schema({
   birdId: { type: Schema.Types.ObjectId, ref: "Bird" },
+  title: { type: String },
   date: { type: Date, default: Date.now },
   location: {
     type: {
@@ -36,6 +37,10 @@ const observationSchema = new Schema({
   },
   sound: String,
   temperature: { type: Number },
+  notes: { 
+    type: String, 
+    maxLength: 300
+   }
 });
 
 const Observation = model("Observation", observationSchema);

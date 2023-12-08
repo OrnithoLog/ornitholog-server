@@ -56,9 +56,12 @@ router.post("/observations", (req, res, next) => {
     birdId,
     notes
   })
-    .then((response) => res.status(201).json(response))
+    .then((response) => {
+      console.log(response)
+      res.status(201).json(response)
+    })
     .catch((err) => {
-      console.log("Error creating Observation");
+      console.log("Error creating Observation", err);
       res.status(500).json({ message: "Error creating project..." });
     });
 });

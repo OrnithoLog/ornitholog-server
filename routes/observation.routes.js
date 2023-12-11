@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 
 const Observation = require("../models/Observation.model");
 const { isAuthenticated } = require("../middleware/jwt.middleware");
+const { isOwner } = require("../middleware/isOwner.middleware");
 
 router.get("/observations", (req, res, next) => {
   Observation.find()
@@ -71,6 +72,7 @@ router.post("/observations", isAuthenticated, (req, res, next) => {
 router.put(
   "/observations/:observationId",
   isAuthenticated,
+  isOwner,
   (req, res, next) => {
     const { observationId } = req.params;
     const {
@@ -114,17 +116,22 @@ router.put(
   }
 );
 
-router.delete("/observations/:observationId", (req, res, next) => {
-  const { observationId } = req.params;
-  Observation.findByIdAndDelete(observationId)
-    .then(() => {
-      res.json({
-        message: `Observation with ${observationId} has been successfully removed`,
-      });
-    })
-    .catch((err) =>
-      res.status(500).json({ message: "Error updating observations..." })
-    );
-});
+router.delete(
+  "/observations/:observationId",
+  isAuthenticated,
+  isOwner,
+  (req, res, next) => {
+    const { observationId } = req.params;
+    Observation.findByIdAndDelete(observationId)
+      .then(() => {
+        res.json({
+          message: `Observation with ${observationId} has been successfully removed`,
+        });
+      })
+      .catch((err) =>
+        res.status(500).json({ message: "Error updating observations..." })
+      );
+  }
+);
 
 module.exports = router;

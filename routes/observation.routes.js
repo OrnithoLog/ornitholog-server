@@ -17,7 +17,7 @@ router.get("/observations", (req, res, next) => {
 });
 
 router.get("/observations/:id", (req, res, next) => {
-  const { id } = req.params
+  const { id } = req.params;
   Observation.findById(id)
     .populate("birdId")
     .then((response) => {
@@ -30,7 +30,6 @@ router.get("/observations/:id", (req, res, next) => {
 });
 
 router.post("/observations", isAuthenticated, (req, res, next) => {
-
   const {
     title,
     date,
@@ -42,7 +41,7 @@ router.post("/observations", isAuthenticated, (req, res, next) => {
     sound,
     temperature,
     birdId,
-    notes
+    notes,
   } = req.body;
 
   Observation.create({
@@ -57,11 +56,11 @@ router.post("/observations", isAuthenticated, (req, res, next) => {
     sound,
     temperature,
     birdId,
-    notes
+    notes,
   })
     .then((response) => {
-      console.log(response)
-      res.status(201).json(response)
+      console.log(response);
+      res.status(201).json(response);
     })
     .catch((err) => {
       console.log("Error creating Observation", err);
@@ -69,25 +68,12 @@ router.post("/observations", isAuthenticated, (req, res, next) => {
     });
 });
 
-router.put("/observations/:observationId", (req, res, next) => {
-  const { observationId } = req.params;
-  const {
-    title,
-    date,
-    location,
-    habitat,
-    vegetation,
-    age,
-    photo,
-    sound,
-    temperature,
-    birdId,
-    notes
-  } = req.body;
-
-  Observation.findByIdAndUpdate(
-    observationId,
-    {
+router.put(
+  "/observations/:observationId",
+  isAuthenticated,
+  (req, res, next) => {
+    const { observationId } = req.params;
+    const {
       title,
       date,
       location,
@@ -98,18 +84,35 @@ router.put("/observations/:observationId", (req, res, next) => {
       sound,
       temperature,
       birdId,
-      notes
-    },
-    { new: true }
-  )
-    .then((updatedObservation) => {
-      res.json(updatedObservation);
-    })
-    .catch((err) => {
-      console.log("Error updating an project");
-      res.status(500).json({ message: "Error updating observation..." });
-    });
-});
+      notes,
+    } = req.body;
+
+    Observation.findByIdAndUpdate(
+      observationId,
+      {
+        title,
+        date,
+        location,
+        habitat,
+        vegetation,
+        age,
+        photo,
+        sound,
+        temperature,
+        birdId,
+        notes,
+      },
+      { new: true }
+    )
+      .then((updatedObservation) => {
+        res.json(updatedObservation);
+      })
+      .catch((err) => {
+        console.log("Error updating an project", err);
+        res.status(500).json({ message: "Error updating observation..." });
+      });
+  }
+);
 
 router.delete("/observations/:observationId", (req, res, next) => {
   const { observationId } = req.params;

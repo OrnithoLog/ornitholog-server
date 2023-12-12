@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
 
+const fileUploader = require("../config/cloudinary.config");
+
 const Observation = require("../models/Observation.model");
 const { isAuthenticated } = require("../middleware/jwt.middleware");
 const { isOwner } = require("../middleware/isOwner.middleware");
@@ -133,5 +135,15 @@ router.delete(
       );
   }
 );
+
+router.post("/upload", fileUploader.single("photo"), (req, res, next) => {
+ 
+  if (!req.file) {
+    next(new Error("No file uploaded!"));
+    return;
+  }
+    
+  res.json({ obsPhotoUrl: req.file.path });
+});
 
 module.exports = router;

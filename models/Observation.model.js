@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const observationSchema = new Schema({
-  creator: { type: Schema.Types.ObjectId, ref:"User" },
+  creator: { type: Schema.Types.ObjectId, ref: "User" },
   birdId: { type: Schema.Types.ObjectId, ref: "Bird" },
   title: { type: String },
   date: { type: Date, default: Date.now },
@@ -38,11 +38,15 @@ const observationSchema = new Schema({
   },
   sound: String,
   temperature: { type: Number },
-  notes: { 
-    type: String, 
+  notes: {
+    type: String,
     maxLength: 300
-   }
-});
+  }
+},
+  {
+    timestamps: true
+  }
+);
 
 const Observation = model("Observation", observationSchema);
 

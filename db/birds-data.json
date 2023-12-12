@@ -1,0 +1,183 @@
+[
+    {
+        "_id": "657833633420f38d84a6caff",
+        "name": "Dunnock",
+        "sciName": "Prunella modularis",
+        "family": "Prunellidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://www.arkwildlife.co.uk/wp-content/uploads/2013/08/dunnock-bird.jpg",
+        "region": [
+            "Central Europe"
+        ],
+        "lengthMax": 14,
+        "wingspanMin": 36,
+        "wingspanMax": 43,
+        "__v": 0
+    },
+    {
+        "_id": "65783a2b3420f38d84a6cb06",
+        "name": "Eurasian Blue Tit",
+        "sciName": "Cyanistes caeruleus",
+        "family": "Paridae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/46409481/900",
+        "region": [
+            "Europe",
+            "Asia"
+        ],
+        "lengthMax": 12,
+        "wingspanMin": 14,
+        "wingspanMax": 15,
+        "__v": 0
+    },
+    {
+        "_id": "65783baec691afc8ce75a626",
+        "name": "European Goldfinch",
+        "sciName": "Carduelis carduelis",
+        "family": "Fringillidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/256707351/900",
+        "region": [
+            "Europe",
+            "Asia",
+            "North Africa"
+        ],
+        "lengthMax": 13,
+        "wingspanMin": 21,
+        "wingspanMax": 25
+    },
+    {
+        "_id": "65783baec691afc8ce75a627",
+        "name": "Great Tit",
+        "sciName": "Parus major",
+        "family": "Paridae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Great_tit_side-on.jpg",
+        "region": [
+            "Europe",
+            "Asia"
+        ],
+        "lengthMax": 14,
+        "wingspanMin": 22,
+        "wingspanMax": 25
+    },
+    {
+        "_id": "65783baec691afc8ce75a628",
+        "name": "Common Blackbird",
+        "sciName": "Turdus merula",
+        "family": "Turdidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44584641/1800",
+        "region": [
+            "Europe",
+            "Asia",
+            "North Africa"
+        ],
+        "lengthMax": 25,
+        "wingspanMin": 34,
+        "wingspanMax": 38
+    },
+    {
+        "_id": "65783baec691afc8ce75a629",
+        "name": "Song Thrush",
+        "sciName": "Turdus philomelos",
+        "family": "Turdidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/256763571/1800",
+        "region": [
+            "Europe",
+            "Asia",
+            "North Africa"
+        ],
+        "lengthMax": 23,
+        "wingspanMin": 33,
+        "wingspanMax": 36
+    },
+    {
+        "_id": "65783baec691afc8ce75a62a",
+        "name": "European Robin",
+        "sciName": "Erithacus rubecula",
+        "family": "Muscicapidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44599871/1800",
+        "region": [
+            "Europe"
+        ],
+        "lengthMax": 14,
+        "wingspanMin": 20,
+        "wingspanMax": 22
+    },
+    {
+        "_id": "65783baec691afc8ce75a62b",
+        "name": "Barn Swallow",
+        "sciName": "Hirundo rustica",
+        "family": "Hirundinidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/305765651/1800",
+        "region": [
+            "Europe",
+            "Asia",
+            "Africa",
+            "Americas"
+        ],
+        "lengthMax": 19,
+        "wingspanMin": 32,
+        "wingspanMax": 34
+    },
+    {
+        "_id": "65783baec691afc8ce75a62c",
+        "name": "Eurasian Jay",
+        "sciName": "Garrulus glandarius",
+        "family": "Corvidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/252253081/1800",
+        "region": [
+            "Europe",
+            "Asia"
+        ],
+        "lengthMax": 35,
+        "wingspanMin": 52,
+        "wingspanMax": 58
+    },
+    {
+        "_id": "65783baec691afc8ce75a62d",
+        "name": "Eurasian Bullfinch",
+        "sciName": "Pyrrhula pyrrhula",
+        "family": "Fringillidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bullfinch_side-on.jpg/1280px-Bullfinch_side-on.jpg",
+        "region": [
+            "Europe",
+            "Asia"
+        ],
+        "lengthMax": 15,
+        "wingspanMin": 20,
+        "wingspanMax": 24
+    },
+    {
+        "_id": "65783baec691afc8ce75a62e",
+        "name": "Eurasian Nuthatch",
+        "sciName": "Sitta europaea",
+        "family": "Sittidae",
+        "order": "Passeriformes",
+        "status": "Low concern",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bullfinch_side-on.jpg/1280px-Bullfinch_side-on.jpg",
+        "region": [
+            "Europe",
+            "Asia"
+        ],
+        "lengthMax": 14,
+        "wingspanMin": 20,
+        "wingspanMax": 22
+    }
+]

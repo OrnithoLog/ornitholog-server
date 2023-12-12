@@ -1,0 +1,192 @@
+[
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                51.509865,
+                -0.118092
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62a",
+        "title": "European Robin Sighting",
+        "date": "2023-12-08T15:26:06.195Z",
+        "habitat": "urban",
+        "vegetation": "Bushes",
+        "age": "adult",
+        "photo": "https://www.vogelwarte.ch/wp-content/uploads/2023/04/4000_0.jpg",
+        "temperature": 18,
+        "notes": "Spotted a vibrant European Robin in a city park in London.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                48.8566,
+                2.3522
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a628",
+        "title": "Common Blackbird Sighting",
+        "date": "2023-12-09T10:15:30.542Z",
+        "habitat": "urban",
+        "vegetation": "Trees",
+        "age": "adult",
+        "photo": "https://www.arkwildlife.co.uk/wp-content/uploads/2013/08/blackbird.jpg",
+        "temperature": 15,
+        "notes": "Observed a Common Blackbird in a garden in Paris.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                40.7128,
+                -74.0060
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a626",
+        "title": "European Goldfinch Sighting",
+        "date": "2023-12-10T09:45:12.789Z",
+        "habitat": "urban",
+        "vegetation": "Gardens",
+        "age": "adult",
+        "photo": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/256707351/900",
+        "temperature": 20,
+        "notes": "Spotted a European Goldfinch perched on a fence in New York.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                34.0522,
+                -118.2437
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a627",
+        "title": "Great Tit Sighting",
+        "date": "2023-12-11T14:30:45.621Z",
+        "habitat": "urban",
+        "vegetation": "City Parks",
+        "age": "adult",
+        "photo": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/169357911/900",
+        "temperature": 25,
+        "notes": "Observed a Great Tit singing in a city park in Los Angeles.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                41.9028,
+                12.4964
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a629",
+        "title": "Song Thrush Sighting",
+        "date": "2023-12-12T11:10:20.387Z",
+        "habitat": "urban",
+        "vegetation": "City Streets",
+        "age": "adult",
+        "photo": "https://www.birdwords.co.uk/wp-content/uploads/2019/10/Song-thrush.jpg",
+        "temperature": 18,
+        "notes": "A Song Thrush foraging for food in the streets of Rome.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                51.1657,
+                10.4515
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62a",
+        "title": "European Robin at the River",
+        "date": "2023-12-13T08:55:18.934Z",
+        "habitat": "river",
+        "vegetation": "Riverbank",
+        "age": "adult",
+        "photo": "https://st2.depositphotos.com/27201292/46580/i/450/depositphotos_465802010-stock-photo-selective-shot-european-robin-bird.jpg",
+        "temperature": 12,
+        "notes": "Spotted a European Robin by the river in Germany.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                48.8566,
+                2.3522
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62b",
+        "title": "Barn Swallow Sighting",
+        "date": "2023-12-14T16:40:55.123Z",
+        "habitat": "urban",
+        "vegetation": "Open Skies",
+        "age": "adult",
+        "photo": "https://www.onthewingphotography.com/wings/wp-content/uploads/2013/05/barn-swallow-flight-mia-mcpherson-4402.jpg",
+        "temperature": 22,
+        "notes": "Witnessed a Barn Swallow gracefully flying over the city of Paris.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                51.1657,
+                10.4515
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62c",
+        "title": "Eurasian Jay Sighting",
+        "date": "2023-12-15T13:20:30.879Z",
+        "habitat": "Forest",
+        "vegetation": "Trees",
+        "age": "adult",
+        "photo": "https://www.birdinginportugal.com/images/bagallery/gallery-5/thumbnail/category-3/22-05-22-Eurasian-Jay-.jpg?1686948967",
+        "temperature": 10,
+        "notes": "Spotted an Eurasian Jay in the dense forests of Germany.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                55.7558,
+                37.6176
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62d",
+        "title": "Eurasian Bullfinch in Winter",
+        "date": "2023-12-16T09:05:40.502Z",
+        "habitat": "forest",
+        "vegetation": "Snow-covered Trees",
+        "age": "adult",
+        "photo": "https://i.guim.co.uk/img/media/c1c7efbe415b41759a9fa61f42bb9af3614c3abb/356_523_4854_2911/master/4854.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8d0dfb8615fc1c23fe6cb137fc61e051",
+        "temperature": -5,
+        "notes": "Spotted an Eurasian Bullfinch among snow-covered trees in Moscow.",
+        "creator": "65788957af89838810642a6a"
+    },
+    {
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                48.8566,
+                2.3522
+            ]
+        },
+        "birdId": "65783baec691afc8ce75a62e",
+        "title": "Eurasian Nuthatch Sighting",
+        "date": "2023-12-17T14:50:15.670Z",
+        "habitat": "forest",
+        "vegetation": "Trees",
+        "age": "adult",
+        "photo": "https://www.bto.org/sites/default/files/birdfacts/00438_Nuthatch_Sarah%20Kelman.jpg",
+        "temperature": 8,
+        "notes": "Observed an Eurasian Nuthatch foraging in the forests near Paris.",
+        "creator": "65788957af89838810642a6a"
+    }
+]

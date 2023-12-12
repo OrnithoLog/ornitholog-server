@@ -121,7 +121,7 @@ router.put(
 router.delete(
   "/observations/:observationId",
   isAuthenticated,
-  isOwner,
+  // isOwner,
   (req, res, next) => {
     const { observationId } = req.params;
     Observation.findByIdAndDelete(observationId)

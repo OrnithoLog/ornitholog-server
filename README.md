@@ -18,7 +18,7 @@ OrnithoLog is a single-page application designed for users to upload bird observ
 ## How To Use It Locally
 1. to clone the project, run `git clone https://github.com/ornitholog/ornitholog-server.git`
 2. install all the dependencies `npm install`
-3. create an `.env` file in the root to add the following environment variables `PORT=5005`, `ORIGIN=http://localhost:5173`, `TOKEN_SECRET=y0uRt0k3N$eCr3T`
+3. create an `.env` file in the root to add the following environment variables `PORT=5005`, `ORIGIN=http://localhost:5173`, `TOKEN_SECRET=thisisasecrettoken`
 4. to run the application, run `npm run dev`
 
 ## Project Demo

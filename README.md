@@ -1,4 +1,4 @@
-# ORNITHOLOG - Express API (Backend)
+# OrnithoLog - Express API (Backend)
 
 ## Description
 
@@ -8,20 +8,18 @@ OrnithoLog is a single-page application designed for users to upload bird observ
 - READ *BirdModel* and *ObservationModel* (every user)
 - CREATE, UPDATE, DELETE *BirdModel* (only admin)
 - READ *ObservationModel* (every user)
-- CREATE *Observation.model* (ony loggedin)
-- UPDATE & DELETE *Observation.model* (ony loggedin and creator users)  
+- CREATE *Observation.model* (only logged-in)
+- UPDATE & DELETE *Observation.model* (only logged-in and creator users)  
 - CREATE *User.Model*
 
 ## Link To The Frontend 
 > https://github.com/ornitholog/ornitholog-client
 
-## How To Use It
-
-1. Index page: to show companies list and filters (for all)
-2. Detail page: company information (for all)
-3. Add post page (for companies)
-4. Edit/delete post page (for companies)
-5. Saved companies page (for users)
+## How To Use It Locally
+1. to clone the project, run `git clone https://github.com/ornitholog/ornitholog-server.git`
+2. install all the dependencies `npm install`
+3. create an `.env` file in the root to add the following environment variables `PORT=5005`, `ORIGIN=http://localhost:5173`, `TOKEN_SECRET=y0uRt0k3N$eCr3T`
+4. to run the application, run `npm run dev`
 
 ## Project Demo
 > https://ornitholog.netlify.app/
